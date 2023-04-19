@@ -58,6 +58,10 @@ img{
     display:none;
 }
 
+#seeMore, #seeMore2 {
+    color:purple;
+    text-decoration:underline;
+}
 
 /*contact me*/
 #contact-content{
