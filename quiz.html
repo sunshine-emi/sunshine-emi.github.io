@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Emilyn Young</h1>
+    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main id="main-main">
+        <div id="quiz">
+            <label for="q1">Which of the following is an example of a self-closing tag?</label><br>
+            <select id="q1">
+                <option>Select...</option>
+                <option>&lt;a&gt;</option>
+                <option>&lt;img&gt;</option>
+                <option>&lt;button&gt;</option>
+                <option>&lt;em&gt;</option>
+            </select>
+            <hr>
+            <label for="q2">Which of the following is the correct attribute for a link source?</label><br>
+            <select id="q2">
+                <option>Select...</option>
+                <option>href</option>
+                <option>src</option>
+                <option>link</option>
+                <option>for</option>
+            </select>
+            <hr>
+            <label for="q3">Which of the following is the correct syntax for calling an HTML element in JavaScript?</label><br>
+            <select id="q3">
+                <option>Select...</option>
+                <option>document.getElementByClass</option>
+                <option>doc.getElemById</option>
+                <option>document.getElementById</option>
+                <option>document.getelementbyid</option>
+            </select>
+            <hr>
+            <label for="q4">If you wanted to create space around the outside of an element and separate it from other elements, which CSS style attribute would you choose to code?</label><br>
+            <select id="q4">
+                <option>Select...</option>
+                <option>padding:</option>
+                <option>margin:</option>
+                <option>display:</option>
+                <option>givemespace:</option>
+            </select>
+            <hr>
+        </div>
+        
+        <button onclick="showScore()">Submit!</button>
+        
+        <div id="result" class="hidden">
+        </div>
+        
+        <button id="reset" class="hidden" onclick="resetQuiz()">Reset</button>
+    </main>
+    <footer id="main-footer">
+        &copy;Emilyn Young
+    </footer>
+</body>
+    <script src="script.js"></script>
+</html>

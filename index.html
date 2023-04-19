@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="styles1.css">
-      <title>CSCE 102-013 Lab 04 Template</title>
-    </head>
-    <body>
-        <div id="content">
-            <header id="main-header">
-                <h1>Best Website</h1>
-            </header>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </nav>
-            <main id="main-main">
-                <h2>Hello World</h2>
-            </main>
-            <hr>
-            <footer id="main-footer">
-                    &copy;Emilyn Young
-            </footer>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Final Project</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Emilyn Young</h1>
+    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main id="main-main">
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="images/DSCN0543.jpg" width="600px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/IMG_1817.jpg" width="600px">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/IMG_0113.jpg" width="600px">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/IMG_1854.jpeg" width="600px">
+            </div>
         </div>
-    </body>
+        <br>
+        <div>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <hr>
+        <section id="about">
+        <h2 class="main-heading">About Me</h2>
+        <p>Born in Pittsburgh, Pennsylvania, I am a Northerner at heart! However, since moving to Columbia, SC 10 years ago, I have learned to love the sun (and humidity) in the South. I was homeschooled throughout elementary, middle, and high school, and am so thankful for that opportunity and experience. I had the benefit of a strong community, both from co-op style learning curriculums and from various sports and activities, including ballet, soccer, and swimming. I danced for 14 years, spending three en pointe, before I quit in 11th grade and took up swimming instead. I swam my senior season, earning a varsity letter in the 100 meter butterfly stroke.</p>
+        <p id="txt-about" class="hidden">I tend to be intellectually curious about a various, sometimes unrelated, topics. These areas of interest include, but are by no means limited to, CAR T-Cell Therapy and its application in fighting cancerous tumors, research on ALS, and a 384-page biography on Queen Theodora I of the Byzantine Empire (I think it was “Theodora: Empress of Byzantium” by Paolo Cesaretti). While I am not defined by my intellect nor curiousity, I do find it to be a characteristic of myself that I look forward to growing in my next three years at USC!</p>
+        <a id="seeMore" onclick="toggleAbout()" href="#">See more...</a>
+        </section>
+        
+        <hr>
+        
+        <section id="career">
+        <h2 class="main-heading">My Future Career Plans</h2>
+        <p>Although the future is a broad term, I would like to present my plan both for the short-term and the long-term -- in other words, during the next three years of college and then after I graduate.</p>
+        <p id="txt-career" class="hidden">During the next three years, there are a number of things I would like to accomplish. I am currently involved in biological research, specifically in discovering and classifying new species of bacteria and bacteriophages (viruses that infect bacteria). Over the summer, I will be engaged in a project to determine the impact of virus carrying bacteria on plant growth in the laboratory. I intend to continue in my research throughout my college career. Additionally, I would like to study abroad in Costa Rica for a Maymest next year. I am minoring in Spanish and see this as an opportunity to both practice what I've learned in the real world and to explore cultures outside of those with which I am familiar. I plan to apply to Medical School, and so understanding how other countries and cultures view the medical field and the practice of medicine will be instrumental to me in the future.<br><br>After graduation, I would like to attend the University of South Carolina School of Medicine. Following my time as a med student and my graduation, I will complete my residency at a hospital in the region. If possible, I am keen to remain in the Southeast -- the weather is simply too wonderful to pass up!</p>
+        <a id="seeMore2" onclick="toggleCareer()" href="#;">See more...</a>
+        </section>
+        
+        <hr>
+        
+        <h2>What I've Learned!<h2>
+        <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kOT9OxUeGRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+    </main>
+    <footer id="main-footer">
+        &copy;Emilyn Young
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

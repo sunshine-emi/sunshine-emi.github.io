@@ -1,0 +1,140 @@
+/* Color Theme Swatches in RGBA */
+.Commercial-airplane-jetliner-flying-above-dramatic-clouds.-1-rgba { color: rgba(105, 104, 140, 1); }
+.Commercial-airplane-jetliner-flying-above-dramatic-clouds.-2-rgba { color: rgba(40, 57, 89, 1); }
+.Commercial-airplane-jetliner-flying-above-dramatic-clouds.-3-rgba { color: rgba(142, 163, 191, 1); }
+.Commercial-airplane-jetliner-flying-above-dramatic-clouds.-4-rgba { color: rgba(242, 188, 141, 1); }
+.Commercial-airplane-jetliner-flying-above-dramatic-clouds.-5-rgba { color: rgba(242, 159, 141, 1); }
+
+body{
+    background:rgba(105, 104, 140, 0.7);
+    width:100%;
+}
+
+#main-header{
+    color:white;
+    text-align:center;
+}
+
+#main-nav{
+    background:rgba(40, 57, 89, 0.9);
+    padding:8px;
+}
+
+#main-nav li{
+    width:90%;
+    margin:auto;
+    list-style-type:none;
+    display:block;
+    border:1px solid white;
+}
+
+#main-nav a{
+    color:white;
+    text-decoration:none;
+    margin:5px;
+}
+
+#main-main{
+    background:rgb(250, 240, 230, 1);
+    color:rgba(40, 57, 89, 1);
+    padding:10px;
+}
+
+.main-heading{
+    text-align:center;
+}
+
+p{
+    padding:8px;
+}
+
+img{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#textArea{
+    display:none;
+}
+
+
+/*contact me*/
+#contact-content{
+    display:flex;
+    margin:5px;
+    padding:5px;
+}
+
+#contact, form{
+    padding:12px;
+    flex:1;
+    align-items:center;
+}
+
+#address{
+    flex:2;
+}
+
+.show-more{
+    text-decoration:underline;
+}
+
+#main-footer{
+    background:rgba(40, 57, 89, 0.9);
+    padding:5px;
+    color:white;
+    text-align:center;
+}
+
+.hidden{
+    display:none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Desktop*/
+@media(min-width:720px){
+    body{
+    width:80%;
+    margin:auto;
+    }
+    
+    #main-nav{
+    margin:auto;
+    padding:5px;
+    text-align:center;
+    }
+    
+    #main-nav li{
+    display:inline;
+    }
+    
+    #main-nav a{
+    color:white;
+    text-decoration:none;
+    padding:5px;
+}
+    
+}
+
+/*Printing*/
+@media print{
+    nav{
+        display:none;
+    }
+}
